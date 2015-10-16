@@ -2,8 +2,9 @@
 // Copyright (c) Microsoft Corporation.    All rights reserved.
 //
 
-#define LPC1768
+//#define LPC1768
 //#define K64F
+#define DISCO_F746NG
 //#define USE_I2C
 //#define USE_SPI
 #define USE_GPIO
@@ -45,6 +46,8 @@ namespace Microsoft.Zelig.Test.mbed.Simple
     using System.Runtime.InteropServices;
 #elif (K64F)
     using K64F = Zelig.K64F;
+#elif (DISCO_F746NG)
+    using DISCO_F746NG = Zelig.DISCO_F746NG;
 #else
 #error No target board defined.
 #endif
@@ -151,6 +154,8 @@ namespace Microsoft.Zelig.Test.mbed.Simple
         static int threadPin = (int)LPC1768.PinName.LED4;
 #elif K64F
         static int threadPin = (int)K64F.PinName.LED4;
+#elif DISCO_F746NG
+        static int threadPin = (int)K64F.PinName.LED1;
 #else
 #error No target board defined.
 #endif
@@ -165,6 +170,10 @@ namespace Microsoft.Zelig.Test.mbed.Simple
             (int)K64F.PinName.LED1,
             (int)K64F.PinName.LED2,
             (int)K64F.PinName.LED3,
+#elif (DISCO_F746NG && THREADING)
+          // only one LED :(
+#elif (DISCO_F746NG && !THREADING)
+          (int)DISCO_F746NG.PinName.LED1,
 #else
 #error No target board defined.
 #endif
@@ -224,8 +233,8 @@ namespace Microsoft.Zelig.Test.mbed.Simple
             int chipSelect = (int)LPC1768.PinName.p8;
 #elif (K64F)
             int chipSelect = (int)K64F.PinName.PTD0;
-#else
-#error No target board defined.
+#elif (DISCO_F746NG)
+            int chipSelect = (int)DISCO_F746NG.PinName.D10;
 #endif
             SpiConnectionSettings settings = new SpiConnectionSettings(chipSelect)
             {

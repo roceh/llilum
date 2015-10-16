@@ -176,6 +176,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_Common", "Test\LLVM\Ut
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Llilum.Devices", "RunTime\Framework\Llilum\Devices\Microsoft.Llilum.Devices.csproj", "{D68EE51B-A898-4A77-97D8-C61254CAC122}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DISCO_F746NG", "RunTime\DeviceModels\Boards\DISCO_F746NG\DISCO_F746NG.csproj", "{335FD738-72F2-499C-8610-73FE99C0C6DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1490,7 +1492,6 @@ Global
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Debug|ARM.ActiveCfg = Debug|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Debug|ARM.Build.0 = Debug|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Debug|Win32.ActiveCfg = Debug|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Debug|Win32.Build.0 = Debug|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -1510,7 +1511,6 @@ Global
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Release|ARM.ActiveCfg = Release|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Release|ARM.Build.0 = Release|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Release|Win32.ActiveCfg = Release|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Release|Win32.Build.0 = Release|Any CPU
 		{77D71AF4-11C3-409B-A211-51FA19E5C1AA}.Release|x64.ActiveCfg = Release|Any CPU

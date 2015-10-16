@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{$guid1$}</ProjectGuid>
+    <ProjectGuid>{5FDB000A-9A3B-47DB-947B-6CB3EA606BF3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>$safeprojectname$</RootNamespace>
@@ -54,6 +54,9 @@
     </Reference>
     <Reference Include="LPC1768">
       <HintPath>$(LLILUM_SDK)\ZeligBuild\Target\bin\Debug\LPC1768.dll</HintPath>
+    </Reference>
+    <Reference Include="DISCO_F746NG">
+      <HintPath>$(LLILUM_SDK)\ZeligBuild\Target\bin\Debug\DISCO_F746NG.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Zelig.Support.mbed">
       <HintPath>$(LLILUM_SDK)\ZeligBuild\Target\bin\Debug\Microsoft.Zelig.Support.mbed.dll</HintPath>

@@ -21,9 +21,11 @@ IF %1.==. (
     ECHO Detected target: %1
     set TARGET=%1
     IF "%1"=="K64F" (
-    set SIZE_OF_HEAP=0x10000
-) ELSE (
-    set SIZE_OF_HEAP=0x6000
+    	set SIZE_OF_HEAP=0x10000
+    ) ELSE IF "%1"=="DISCO_F746NG" (
+    	set SIZE_OF_HEAP=0x10000
+    ) ELSE (
+        set SIZE_OF_HEAP=0x6000
     )
 )
 
@@ -58,10 +60,12 @@ ECHO Size Report...
 ECHO.
 ECHO Linking with mbed libs...
 make clean TARGET=%TARGET%
-make DEBUG=1 TARGET=%TARGET% HEAP_SIZE=%SIZE_OF_HEAP%
+make DEBUG=1 TARGET=%TARGET% HEAP_SIZE=%SIZE_OF_HEAP% ZELIG_ROOT=C:\llilum\
 
 GOTO :EXIT
 
 :EXIT
 ECHO.
 ECHO Completed 
+
+pause

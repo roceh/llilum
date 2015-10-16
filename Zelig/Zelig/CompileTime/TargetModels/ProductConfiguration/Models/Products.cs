@@ -61,4 +61,32 @@ namespace Microsoft.Zelig.Configuration.Environment
     }
 
     #endregion // K64F
+	
+	
+	#region DISCO_F746NG
+
+    [DisplayName( "DISCO_F746NG MBED Hosted" )]
+    public sealed class DISCO_F746NGMBEDHosted : ProductCategory
+    {
+        [AllowedOptions( typeof( mBed ) )]
+        [Defaults( "CoreClockFrequency", 216000000UL )]
+        [Defaults( "RealTimeClockFrequency", 1000000UL )]
+        public ProcessorCategory Processor;
+    }
+
+    [DisplayName( "CMSIS-Core Memory Map for DISCO_F746NG" )]
+    public sealed class DISCO_F746NGCMSISCoreMemoryMap : MemoryMapCategory
+    {
+    }
+
+    [DisplayName( "LLVM Hosted Compilation for DISCO_F746NG" )]
+    [Defaults( "Platform", typeof( Microsoft.Zelig.Configuration.Environment.Abstractions.LLVMPlatform ) )]
+    [Defaults( "CallingConvention", typeof( Microsoft.Zelig.Configuration.Environment.Abstractions.LLVMCallingConvention ) )]
+    [Defaults( "Product", typeof( DISCO_F746NGMBEDHosted ) )]
+    [Defaults( "MemoryMap", typeof( DISCO_F746NGCMSISCoreMemoryMap ) )]
+    public sealed class DISCO_F746NGMBEDHostedCompilationSetup : CompilationSetupCategory
+    {
+    }
+
+    #endregion // DISCO_F746NG
 }

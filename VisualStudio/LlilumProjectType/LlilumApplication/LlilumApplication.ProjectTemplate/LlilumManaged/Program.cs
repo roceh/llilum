@@ -2,8 +2,9 @@
 // Copyright (c) Microsoft Corporation.    All rights reserved.
 //
 
-#define LPC1768
+//#define LPC1768
 //#define K64F
+#define DISCO_F746NG
 
 namespace Managed
 {
@@ -16,6 +17,8 @@ namespace Managed
     using Microsoft.Zelig.LPC1768;
 #elif K64F
     using Microsoft.Zelig.K64F;
+#elif (DISCO_F746NG)
+    using Microsoft.Zelig.DISCO_F746NG;
 #endif
 
     class Program
@@ -36,6 +39,9 @@ namespace Managed
 #elif (K64F)
             (int)PinName.LED_BLUE,
             (int)PinName.LED_RED,
+#elif (DISCO_F746NG)
+          (int) PinName.LED1,
+>>>>>>> Initial tweaks to get DISCO_F746NG working - blinky c# app now runs
 #else
             #error No target board defined.
 #endif

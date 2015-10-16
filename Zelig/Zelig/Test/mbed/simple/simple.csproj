@@ -52,6 +52,10 @@
       <Project>{cee4d575-4b4b-42b0-b2f1-cc7198cb7306}</Project>
       <Name>LPC1768</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\RunTime\DeviceModels\Boards\DISCO_F746NG\DISCO_F746NG.csproj">
+      <Project>{335fd738-72f2-499c-8610-73fe99c0c6dc}</Project>
+      <Name>DISCO_F746NG</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\RunTime\DeviceModels\mbed\mbed.csproj">
       <Project>{d7f2bc4e-1406-47aa-90e1-07bc4ce9410f}</Project>
       <Name>mbed</Name>

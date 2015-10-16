@@ -28,6 +28,7 @@
   <EnumProperty Name="LlilumBoardName" DisplayName="Board Name" Description="Llilum board name" Category="Board">
     <EnumValue Name="LPC1768" DisplayName="LPC1768" Description="LPC1768 Target" />
     <EnumValue Name="K64F" DisplayName="K64F" Description="K64F Target" />
+    <EnumValue Name="DISCO_F746NG" DisplayName="DISCO_F746NG" Description="DISCO_F746NG Target" />
   </EnumProperty>
   <StringProperty Name="LlilumTargetBoardArchitecture" DisplayName="LlilumTargetBoardArchitecture" Category="Board" Description="" />
   <StringProperty Name="LlilumClAdditionalOptions" DisplayName="LlilumClAdditionalOptions" Category="Board" Description="" />

@@ -7,6 +7,8 @@
 #include "core_cm3.h"
 #elif TARGET_K64F
 #include "core_cm4.h"
+#elif TARGET_DISCO_F746NG
+#include "core_cm7.h"
 #else
 #error Undefined plaform
 #endif
@@ -25,6 +27,8 @@
 #include "system_LPC17xx.h"
 #elif TARGET_K64F
 #include "system_MK64F12.h"
+#elif TARGET_DISCO_F746NG
+#include "stm32f746xx.h"
 #else
 #error Undefined plaform
 #endif

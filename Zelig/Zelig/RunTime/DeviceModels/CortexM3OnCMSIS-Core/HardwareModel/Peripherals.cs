@@ -31,10 +31,10 @@ namespace Microsoft.CortexM3OnCMSISCore
             //
             // Faults, never disabled
             //
-            CMSIS.NVIC.SetPriority( ProcessorARMv7M.IRQn_Type.HardFault_IRQn       , ProcessorARMv7M.c_Priority__NeverDisabled ); 
-            CMSIS.NVIC.SetPriority( ProcessorARMv7M.IRQn_Type.MemoryManagement_IRQn, ProcessorARMv7M.c_Priority__NeverDisabled ); 
-            CMSIS.NVIC.SetPriority( ProcessorARMv7M.IRQn_Type.BusFault_IRQn        , ProcessorARMv7M.c_Priority__NeverDisabled ); 
-            CMSIS.NVIC.SetPriority( ProcessorARMv7M.IRQn_Type.UsageFault_IRQn      , ProcessorARMv7M.c_Priority__NeverDisabled ); 
+            //CMSIS.NVIC.SetPriority( ProcessorARMv7M.IRQn_Type.HardFault_IRQn       , ProcessorARMv7M.c_Priority__NeverDisabled ); 
+            //CMSIS.NVIC.SetPriority( ProcessorARMv7M.IRQn_Type.MemoryManagement_IRQn, ProcessorARMv7M.c_Priority__NeverDisabled ); 
+            //CMSIS.NVIC.SetPriority( ProcessorARMv7M.IRQn_Type.BusFault_IRQn        , ProcessorARMv7M.c_Priority__NeverDisabled ); 
+            //CMSIS.NVIC.SetPriority( ProcessorARMv7M.IRQn_Type.UsageFault_IRQn      , ProcessorARMv7M.c_Priority__NeverDisabled ); 
             
             //
             // System exceptions 

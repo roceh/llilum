@@ -210,6 +210,11 @@ extern "C"
     // CCR
     //
 
+	/*__STATIC_INLINE*/ uint32_t CUSTOM_STUB_SCB_get_CCR()
+	{
+		return *((uint32_t volatile *)0xE000ED14);
+	}
+
     /*__STATIC_INLINE*/ void CUSTOM_STUB_SCB_set_CCR(uint32_t value)
     {
         *((uint32_t volatile *)0xE000ED14) = value;
@@ -391,6 +396,13 @@ extern "C"
 
         __ASM volatile ("BX     LR");
     }
+	
+	void CUSTOM_STUB_DISCO_F746NG_DisableMPU()
+    {
+#if TARGET_DISCO_F746NG
+		HAL_MPU_Disable();
+#endif
+	}
 
     void CUSTOM_STUB_K64F_DisableMPU()
     {

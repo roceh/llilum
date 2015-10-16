@@ -435,7 +435,11 @@ namespace Microsoft.Zelig.Runtime.TargetPlatform.ARMv7
                 
         internal static void Set_8_BytesAlignment( )
         {
-            CUSTOM_STUB_SCB_set_CCR( c_CCR_STD_CONFIG_8 );
+            uint ccr = CUSTOM_STUB_SCB_get_CCR();
+
+            ccr |= c_CCR_STD_CONFIG_8;
+
+            CUSTOM_STUB_SCB_set_CCR( ccr );
         }
 
         internal static void RaiseSystemHandler( uint mask )
@@ -820,7 +824,7 @@ namespace Microsoft.Zelig.Runtime.TargetPlatform.ARMv7
         {
             return (StandardFrame*)SP.ToPointer( );
         }
-        
+
         //
         // All overridable exceptions
         //
@@ -1040,6 +1044,9 @@ namespace Microsoft.Zelig.Runtime.TargetPlatform.ARMv7
 
         [DllImport( "C" )]
         internal static extern void CMSIS_STUB_SCB__set_FAULTMASK( uint faultMask );
+
+        [DllImport("C")]
+        internal static extern uint CUSTOM_STUB_SCB_get_CCR();
 
         [DllImport( "C" )]
         internal static extern void CUSTOM_STUB_SCB_set_CCR( uint value );

@@ -9,6 +9,8 @@
 #include "LPC17xx.h"
 #elif TARGET_K64F
 #include "MK64F12.h"
+#elif TARGET_DISCO_F746NG
+#include "stm32f746xx.h"
 #else
 #error Undefined plaform
 #endif
