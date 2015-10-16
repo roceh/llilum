@@ -1,6 +1,7 @@
 ## LLVM and Zelig
 external/LLVM/
 external/gcc4mbed/
+zelig/LLVM2IR_results/mbed/simple/DISCO_F746NG/
 zelig/LLVM2IR_results/mbed/simple/LPC1768/
 zelig/LLVM2IR_results/mbed/simple/K64F/
 zelig/LLVM2IR_results/mbed/simple/*.xml
