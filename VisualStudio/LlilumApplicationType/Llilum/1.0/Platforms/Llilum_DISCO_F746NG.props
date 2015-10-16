@@ -17,7 +17,7 @@
     <LlilumLinkAdditionalDepsDISCO_F746NG>$(LlilumTargetDivergingDirectoryDISCO_F746NG)/startup_stm32f746xx.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/system_stm32f7xx.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/board.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/cmsis_nvic.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/retarget.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/stm32f7xx_hal_rcc.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/stm32f7xx_hal_pwr_ex.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/stm32f7xx_hal.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/stm32f7xx_hal_cortex.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/stm32f7xx_hal_gpio.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/stm32f7xx_hal_uart.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/stm32f7xx_hal_spi.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/hal_tick.o;$(LlilumTargetDivergingDirectoryDISCO_F746NG)/stm32f7xx_hal_tim.o</LlilumLinkAdditionalDepsDISCO_F746NG>
     <LlilumLinkAdditionalLibDirsDISCO_F746NG>$(LlilumTargetDivergingDirectoryDISCO_F746NG)</LlilumLinkAdditionalLibDirsDISCO_F746NG>
     <LlilumLinkAdditionalOptionsDISCO_F746NG>-T$(LlilumTargetDivergingDirectoryDISCO_F746NG)/STM32F746NG.ld -mcpu=$(LlilumTargetBoardArchitectureDISCO_F746NG) -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -Wl,--gc-sections --specs=nano.specs -u _printf_float -u _scanf_float -Wl,--wrap,main</LlilumLinkAdditionalOptionsDISCO_F746NG>
-    <LlilumLinkLibDepsDISCO_F746NG>mbed;stdc++;supc++;m;c;gcc;nosys;mbed;stdc++;supc++;m;c;gcc;nosys</LlilumLinkLibDepsDISCO_F746NG>
+    <LlilumLinkLibDepsDISCO_F746NG>mbed;stdc++;supc++;m;c;gcc;nosys</LlilumLinkLibDepsDISCO_F746NG>
   </PropertyGroup>
   <PropertyGroup />
   <ItemDefinitionGroup />
