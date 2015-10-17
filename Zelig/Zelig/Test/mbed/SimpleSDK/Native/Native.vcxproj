@@ -24,11 +24,13 @@
   <!-- Supported platform property sheets -->
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Import Project="$(LlilumApplicationTypeDir)Platforms\Llilum_LPC1768.props" />
-    <Import Project="$(LlilumApplicationTypeDir)Platforms\Llilum_K64F.props" />
+    <Import Project="$(LlilumApplicationTypeDir)Platforms\Llilum_K64F.props" />	
+    <Import Project="$(LlilumApplicationTypeDir)Platforms\Llilum_DISCO_F746NG.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Import Project="$(LlilumApplicationTypeDir)Platforms\Llilum_LPC1768.props" />
     <Import Project="$(LlilumApplicationTypeDir)Platforms\Llilum_K64F.props" />
+    <Import Project="$(LlilumApplicationTypeDir)Platforms\Llilum_DISCO_F746NG.props" />
   </ImportGroup>
   <!-- General Llilum Settings -->
   <PropertyGroup Label="Llilum" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -63,6 +65,17 @@
     <LlilumLinkAdditionalOptions>$(LlilumLinkAdditionalOptionsK64F)</LlilumLinkAdditionalOptions>
     <LlilumLinkLibDeps>$(LlilumLinkLibDepsK64F)</LlilumLinkLibDeps>
     <LlilumTargetBoardArchitecture>$(LlilumTargetBoardArchitectureK64F)</LlilumTargetBoardArchitecture>
+  </PropertyGroup>
+    <!-- DISCO_F746NG -->
+  <PropertyGroup Label="Llilum" Condition="'$(LlilumBoardName)' == 'DISCO_F746NG'">
+    <LlilumClAdditionalOptions>$(LlilumClAdditionalOptionsDISCO_F746NG)</LlilumClAdditionalOptions>
+    <LlilumClAdditionalIncludes>$(LlilumClAdditionalIncludesDISCO_F746NG)</LlilumClAdditionalIncludes>
+    <LlilumClPreprocessorDefs>$(LlilumClPreprocessorDefsDISCO_F746NG)</LlilumClPreprocessorDefs>
+    <LlilumLinkAdditionalDeps>$(LlilumLinkAdditionalDepsDISCO_F746NG)</LlilumLinkAdditionalDeps>
+    <LlilumLinkAdditionalLibDirs>$(LlilumLinkAdditionalLibDirsDISCO_F746NG)</LlilumLinkAdditionalLibDirs>
+    <LlilumLinkAdditionalOptions>$(LlilumLinkAdditionalOptionsDISCO_F746NG)</LlilumLinkAdditionalOptions>
+    <LlilumLinkLibDeps>$(LlilumLinkLibDepsDISCO_F746NG)</LlilumLinkLibDeps>
+    <LlilumTargetBoardArchitecture>$(LlilumTargetBoardArchitectureDISCO_F746NG)</LlilumTargetBoardArchitecture>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
@@ -157,6 +170,7 @@
   <ItemGroup>
     <None Include="mbed_simple.FrontEndConfig" />
     <None Include="mbed_simple_K64F.FrontEndConfig" />
+    <None Include="mbed_simple_DISCO_F746NG.FrontEndConfig" />
     <None Include="mbed_simple_LPC1768.FrontEndConfig" />
   </ItemGroup>
   <ItemGroup>

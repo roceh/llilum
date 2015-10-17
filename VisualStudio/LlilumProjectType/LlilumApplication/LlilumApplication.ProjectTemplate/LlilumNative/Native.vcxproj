@@ -150,8 +150,9 @@
 
   <ItemGroup>
     <None Include="mbed_simple.FrontEndConfig" />
-    <None Include="mbed_simple_LPC1768.FrontEndConfig" />
     <None Include="mbed_simple_K64F.FrontEndConfig" />
+    <None Include="mbed_simple_LPC1768.FrontEndConfig" />
+    <None Include="mbed_simple_DISCO_F746NG.FrontEndConfig" />
   </ItemGroup>
 
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
