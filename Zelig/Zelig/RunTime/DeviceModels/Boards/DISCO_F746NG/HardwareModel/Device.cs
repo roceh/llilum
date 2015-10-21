@@ -29,7 +29,7 @@ namespace Microsoft.Zelig.DISCO_F746NG
         {
             get
             { 
-                return 0x10000u;
+                return 0x30000u;
             }
         }
     }

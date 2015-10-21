@@ -13,9 +13,22 @@ using System;
     public class MemoryManager : Chipset.MemoryManager
     {
         private UIntPtr ManagedHeap;
-        private UIntPtr ManagedHeapEnd;
-        
-        //--//
+        private UIntPtr ManagedHeapEnd;      
+
+        public unsafe void AddExternal(UIntPtr beginning, UIntPtr end)
+        {
+            AddLinearSection(beginning, end, RT.MemoryAttributes.ExternalMemory | RT.MemoryAttributes.RandomAccessMemory);
+
+            RT.MemorySegment* ptr = (RT.MemorySegment *) beginning;
+
+            while (ptr != null)
+            {
+                ptr->ZeroFreeMemory();
+
+                ptr = ptr->Next;
+            }
+        }
+
 
         public override unsafe void InitializeMemoryManager( )
         {

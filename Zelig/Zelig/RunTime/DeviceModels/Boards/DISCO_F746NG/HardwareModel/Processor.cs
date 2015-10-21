@@ -33,7 +33,7 @@ namespace Microsoft.Zelig.DISCO_F746NG
         {
             base.InitializeProcessor();
 
-            //DisableMPU();
+            DisableMPU();
         }
 
         [RT.Inline]
