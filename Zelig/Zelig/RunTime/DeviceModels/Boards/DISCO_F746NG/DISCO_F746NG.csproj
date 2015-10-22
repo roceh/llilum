@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{335fd738-72f2-499c-8610-73fe99c0c6dc}</ProjectGuid>	
+    <ProjectGuid>{335FD738-72F2-499C-8610-73FE99C0C6DC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Microsoft.Zelig.DISCO_F746NG</RootNamespace>
@@ -73,6 +73,11 @@
     <Compile Include="HardwareModel\Drivers\SystemTimer.cs" />
     <Compile Include="HardwareModel\GPIO.cs" />
     <Compile Include="HardwareModel\Drivers\InterruptController.cs" />
+    <Compile Include="HardwareModel\HardwareProvidersUwp\AdcProviderUwp.cs" />
+    <Compile Include="HardwareModel\HardwareProvidersUwp\I2cProviderUwp.cs" />
+    <Compile Include="HardwareModel\HardwareProvidersUwp\SpiProviderUwp.cs" />
+    <Compile Include="HardwareModel\HardwareProviders\I2cProvider.cs" />
+    <Compile Include="HardwareModel\HardwareProviders\SpiProvider.cs" />
     <Compile Include="HardwareModel\NVIC.cs" />
     <Compile Include="HardwareModel\Peripherals.cs" />
     <Compile Include="HardwareModel\Processor.cs" />

@@ -150,6 +150,12 @@ namespace Microsoft.Zelig.LLVM
                 }
 
                 _Type underlyingType = GetOrInsertType( tr.UnderlyingType );
+
+                if (underlyingType == null)
+                {
+                    return null;
+                }
+
                 m_typeRepresentationsToType[ tr ] = m_module.GetOrInsertPointerType( typeName, underlyingType );
                 return m_typeRepresentationsToType[ tr ];
             }
