@@ -16,10 +16,9 @@ namespace Microsoft.Zelig.DISCO_F746NG
             Mosi = (int)PinName.SPI_MOSI,
             Miso = (int)PinName.SPI_MISO,
             Sclk = (int)PinName.SPI_SCK,
-            ChipSelect = (int)PinName.SPI_CS,
+            DefaultChipSelect = (int)PinName.SPI_CS,
             SetupTime = 10,
             HoldTime = 10,
-            ReserveMisoPin = true,
             ActiveLow = true,
         };
 
