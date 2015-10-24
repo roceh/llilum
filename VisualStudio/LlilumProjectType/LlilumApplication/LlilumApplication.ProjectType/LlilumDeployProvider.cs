@@ -58,7 +58,17 @@ namespace LlilumApplication
 
             ProcessStartInfo start = new ProcessStartInfo( );
             start.FileName = flashToolPath;
-            start.Arguments = $"{EnsureQuotedPathIfNeeded( binaryPath )} {flashToolArgs}";
+
+            if (String.IsNullOrEmpty(flashToolArgs))
+            {
+            	start.Arguments = $"{EnsureQuotedPathIfNeeded(binaryPath)}";
+            }
+            else
+            {
+            	start.Arguments = $"{flashToolArgs}";
+            }
+
+            
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;
             start.RedirectStandardError = true;
