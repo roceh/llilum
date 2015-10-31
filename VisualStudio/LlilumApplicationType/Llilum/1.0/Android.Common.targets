@@ -343,9 +343,13 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 
   <Target Name="CreateManagedObject" Condition="'@(ReferencePath)' != ''" Inputs="$(IntDir)%(ReferencePath.Filename).bc" Outputs="$(IntDir)%(ReferencePath.Filename).o">
     <Exec Command="echo Compiling and optimizing with LLVM: $(IntDir)%(ReferencePath.Filename).bc to $(IntDir)%(ReferencePath.Filename).o" />
-    <Exec Command="$(LlilumLLVM)opt -scalarrepl -targetlibinfo -verify -mem2reg -constmerge -adce -globaldce -time-passes $(IntDir)%(ReferencePath.Filename).bc -o $(IntDir)%(ReferencePath.Filename)_opt.bc " ContinueOnError="false"/>
+    <!--- 
+	<Exec Command="$(LlilumLLVM)opt -scalarrepl -targetlibinfo -verify -mem2reg -constmerge -adce -globaldce -time-passes $(IntDir)%(ReferencePath.Filename).bc -o $(IntDir)%(ReferencePath.Filename)_opt.bc " ContinueOnError="false"/> 
     <Exec Command="$(LlilumLLVM)llvm-dis $(IntDir)%(ReferencePath.Filename)_opt.bc" ContinueOnError="false"/>
     <Exec Command="$(LlilumLLVM)llc -code-model=small -data-sections -relocation-model=pic -march=thumb -mcpu=cortex-m3 -filetype=obj -mtriple=armv7m-none-eabi -o=$(IntDir)%(ReferencePath.Filename).o $(IntDir)%(ReferencePath.Filename)_opt.bc " ContinueOnError="false"/>
+	-->
+	<Exec Command="$(LlilumLLVM)llvm-dis $(IntDir)%(ReferencePath.Filename).bc" ContinueOnError="false"/>
+    <Exec Command="$(LlilumLLVM)llc -O0 -code-model=small -data-sections -relocation-model=pic -march=thumb -mcpu=cortex-m3 -filetype=obj -mtriple=armv7m-none-eabi -o=$(IntDir)%(ReferencePath.Filename).o $(IntDir)%(ReferencePath.Filename).bc " ContinueOnError="false"/>
   </Target>
 
   <Target Name="ComputeCLOutputFromManagedCode" DependsOnTargets="ResolveReferences">
