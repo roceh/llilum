@@ -80,8 +80,8 @@ namespace Microsoft.Zelig.Configuration.Environment
     }
 
     [DisplayName( "LLVM Hosted Compilation for DISCO_F746NG" )]
-    [Defaults( "Platform", typeof( Microsoft.Zelig.Configuration.Environment.Abstractions.LLVMPlatform ) )]
-    [Defaults( "CallingConvention", typeof( Microsoft.Zelig.Configuration.Environment.Abstractions.LLVMCallingConvention ) )]
+    [Defaults( "Platform", typeof(Microsoft.Zelig.Configuration.Environment.Abstractions.Architectures.ArmV7M_VFP))]
+    [Defaults( "CallingConvention", typeof(Microsoft.Zelig.Configuration.Environment.Abstractions.Architectures.ArmV7MCallingConvention))]
     [Defaults( "Product", typeof( DISCO_F746NGMBEDHosted ) )]
     [Defaults( "MemoryMap", typeof( DISCO_F746NGCMSISCoreMemoryMap ) )]
     public sealed class DISCO_F746NGMBEDHostedCompilationSetup : CompilationSetupCategory

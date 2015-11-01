@@ -92,5 +92,14 @@ namespace Microsoft.Zelig.DISCO_F746NG
         {
             return (int)IRQn.TIM5_IRQn;
         }
+
+        public override int GetSerialPortIRQNumber(string portName)
+        {
+            switch (portName)
+            {
+                default:
+                    throw new NotSupportedException();
+            }
+        }
     }
 }

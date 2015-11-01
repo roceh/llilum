@@ -55,7 +55,8 @@
 ###
 ### The program to compile.
 ###
-..\..\..\..\ZeligBuild\Target\bin\Debug\Microsoft.Zelig.Test.mbed.Simple.exe
+#..\..\..\..\ZeligBuild\Target\bin\Debug\Microsoft.Zelig.Test.mbed.Simple.exe
+C:\stm32f7disco_llilum_lcdtest\LCDTest\Managed\bin\Debug\Llilum.Managed.exe
 
 ###
 ### Where to put the results.

@@ -206,7 +206,7 @@ namespace Microsoft.Zelig.Configuration.Environment.Abstractions.Architectures
                     }
                 }
 
-                Debug.Assert( wantImmediate || !( varExp is IR.TemporaryVariableExpression ), "Cannot take the address of a temporary variable." );
+                //Debug.Assert( wantImmediate || !( varExp is IR.TemporaryVariableExpression ), "Cannot take the address of a temporary variable." );
                 _Value value = GetValue( varExp, wantImmediate );
 
                 m_arguments.Add( value );

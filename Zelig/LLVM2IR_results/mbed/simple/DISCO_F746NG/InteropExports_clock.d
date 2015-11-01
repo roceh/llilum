@@ -7,7 +7,7 @@ DISCO_F746NG\InteropExports_clock.o: \
  C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/core_cmFunc.h \
  C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/core_cmSimd.h \
  C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/system_stm32f7xx.h \
- C:\llilum\Zelig\mbed/gpio_api.h \
+ C:\llilum\Zelig\mbed/analogin_api.h \
  C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/TARGET_STM/TARGET_STM32F7/TARGET_DISCO_F746NG/device.h \
  C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/TARGET_STM/TARGET_STM32F7/TARGET_DISCO_F746NG/objects.h \
  C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/cmsis.h \
@@ -87,6 +87,7 @@ DISCO_F746NG\InteropExports_clock.o: \
  C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/TARGET_STM/TARGET_STM32F7/TARGET_DISCO_F746NG/PortNames.h \
  C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/TARGET_STM/TARGET_STM32F7/TARGET_DISCO_F746NG/PeripheralNames.h \
  C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/TARGET_STM/TARGET_STM32F7/TARGET_DISCO_F746NG/PinNames.h \
+ C:\llilum\Zelig\mbed/gpio_api.h C:\llilum\Zelig\mbed/gpio_irq_api.h \
  C:\llilum\Zelig\mbed/spi_api.h C:\llilum\Zelig\mbed/dma_api.h \
  C:\llilum\Zelig\mbed/buffer.h C:\llilum\Zelig\mbed/i2c_api.h \
  C:\llilum\Zelig\mbed/us_ticker_api.h C:\llilum\Zelig\mbed/ticker_api.h \
@@ -106,7 +107,7 @@ C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/core_cmSimd.h:
 
 C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/system_stm32f7xx.h:
 
-C:\llilum\Zelig\mbed/gpio_api.h:
+C:\llilum\Zelig\mbed/analogin_api.h:
 
 C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/TARGET_STM/TARGET_STM32F7/TARGET_DISCO_F746NG/device.h:
 
@@ -265,6 +266,10 @@ C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/TARGET_STM/TARGET_STM32F7/TARGET_DISCO_
 C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/TARGET_STM/TARGET_STM32F7/TARGET_DISCO_F746NG/PeripheralNames.h:
 
 C:\llilum\Zelig\mbed/TARGET_DISCO_F746NG/TARGET_STM/TARGET_STM32F7/TARGET_DISCO_F746NG/PinNames.h:
+
+C:\llilum\Zelig\mbed/gpio_api.h:
+
+C:\llilum\Zelig\mbed/gpio_irq_api.h:
 
 C:\llilum\Zelig\mbed/spi_api.h:
 
